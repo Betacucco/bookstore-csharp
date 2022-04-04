@@ -1,7 +1,8 @@
 ﻿//Dichiariamo le variabili in base ai tipi
-string titolo = "Clean Code";
-string autore = "Robert C. Martin";
-string isbn13 = "978-0132350884";
+string? titolo = "Clean Code";
+string? autore = "Robert C. Martin";
+
+long isbn = 9780132350884;
 
 int numeroPagine = 431;
 int pesoLibro = 660;
@@ -22,7 +23,7 @@ bool copertinaFlessibile = true;
 Console.WriteLine("IL LIBRO IN QUESTIONE E': " + titolo + " di " + autore);
 
 Console.WriteLine("Informazioni generiche: ");
-Console.WriteLine("ISBN: " + isbn13);
+Console.WriteLine("ISBN: " + isbn);
 Console.WriteLine("Numero delle pagine: " + numeroPagine + " pagine ");
 Console.WriteLine("Peso del libro: " + pesoLibro + " g ");
 Console.WriteLine("Dimensioni del libro: " + larghezza + " cm x " + lunghezza + " cm x " + profondita + " cm ");
